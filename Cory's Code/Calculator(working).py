@@ -1,6 +1,6 @@
-__author__ = 'ColeDixon'
+# __author__ = 'ColeDixon' - Commented out, not sure why it is written this way
 
-# Edited by Cory Phigler 8/07-08/2015
+# Edited by Cory Phigler A.K.A. Victor von Frankenstein 8/07-08/2015
 
 from tkinter import *
 from tkinter import ttk
@@ -103,6 +103,18 @@ separator.grid(row = 3, padx = 5, pady = 5, sticky="ew")
 panel = ttk.Frame(root)
 panel.grid()
 
+# The Number Butons section could be removed and re-written like this(all except the zero and period)
+'''
+numbers = "123456789"
+i = 0
+bttn = []
+for j in range(1,4):
+    for k in range(3):
+        bttn.append(Button(calc, text = numbers[i]))
+        bttn[i].grid(row = j, column = k, pady = 5)
+        bttn[i]["command"] = lambda x = numbers[i]: sum1.num_press(x)
+        i += 1
+'''
 #NUMBER BUTTONS
 one = ttk.Button(panel, text = '1', width = 3, command = lambda: sum1.num_press(1))
 one.grid(row = 3, column = 0, padx = 2, pady = 1)
