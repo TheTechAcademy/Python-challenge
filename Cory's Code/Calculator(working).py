@@ -74,16 +74,6 @@ class Calc():
         self.display(0)
         self.new_num = True
 
-    def all_cancel(self):
-        self.cancel()
-        self.total = 0
-
-    def sign(self):
-        self.eq = False
-        self.current = -(float(self.num_entry.get()))
-        self.display(self.current)
-
-
 sum1 = Calc()
 root = Tk()
 calc = Frame(root)
